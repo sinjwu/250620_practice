@@ -9,7 +9,7 @@ class SumRunnable implements Runnable {
         for(int n: numbers) {
             sum += n;
             try {
-                Thread.sleep(1000);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 System.out.println("Thread Interrupted.");
             }
@@ -26,7 +26,7 @@ public class MainArrSum0 {
                 {7, 14, 21, 28},
                 {100, 200, 300, 400}
         };
-        for(int i = 0; i < dataSets.length; i++) {
+        for(int i = 0; i <  dataSets.length; i++) {
             Thread sumThread = new Thread(new SumRunnable(dataSets[i]));
             sumThread.start();
         } //for문으로 스레드 계속 생성

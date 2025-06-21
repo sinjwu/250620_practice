@@ -5,7 +5,7 @@ class MyRunnable2 implements Runnable {
 
         for(int i = 0; i <= 5; i++) {
             try {
-                Thread.sleep(5000);
+                Thread.sleep(500);
                 System.out.println(i);
             } catch(InterruptedException e) {
                 System.out.println(e.getMessage());
